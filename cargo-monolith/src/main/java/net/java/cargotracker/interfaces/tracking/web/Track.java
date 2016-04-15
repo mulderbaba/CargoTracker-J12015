@@ -109,7 +109,8 @@ public class Track implements Serializable {
     }
 
     public void onTrackById() {
-
+        throw new RuntimeException();
+        /*
         markersModel = new DefaultMapModel();
 
         Cargo cargo = cargoRepository.find(new TrackingId(trackingId));
@@ -130,6 +131,7 @@ public class Track implements Serializable {
             context.addMessage(null, message);
             this.cargo = null;
         }
+        */
     }
 
     public void onPointSelect(PointSelectEvent event) {
